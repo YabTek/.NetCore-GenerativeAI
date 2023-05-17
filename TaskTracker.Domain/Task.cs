@@ -1,8 +1,9 @@
+using TaskTracker.Domain.Common;
+
 namespace TaskTracker.Domain;
 
-public class Task
+public class Task : BaseDomainEntity
 {
-    public int Id { get; set; }
     public int Owner { get; set; }
     public string Title { get; set; }
     public string Description { get; set; }

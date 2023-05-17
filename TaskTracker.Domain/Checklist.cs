@@ -1,8 +1,9 @@
+using TaskTracker.Domain.Common;
+
 namespace TaskTracker.Domain;
 
-public class Checklist
+public class Checklist : BaseDomainEntity
 {
-    public int Id { get; set; }
     public string Title { get; set; }
     public string Description { get; set; }
     public int associated_task { get; set; }
