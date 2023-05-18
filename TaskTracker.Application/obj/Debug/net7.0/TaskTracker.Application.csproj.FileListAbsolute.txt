@@ -1,0 +1,15 @@
+C:\Users\h\Documents\.NetCore-GenerativeAI\TaskTracker.Application\bin\Debug\net7.0\TaskTracker.Application.deps.json
+C:\Users\h\Documents\.NetCore-GenerativeAI\TaskTracker.Application\bin\Debug\net7.0\TaskTracker.Application.dll
+C:\Users\h\Documents\.NetCore-GenerativeAI\TaskTracker.Application\bin\Debug\net7.0\TaskTracker.Application.pdb
+C:\Users\h\Documents\.NetCore-GenerativeAI\TaskTracker.Application\bin\Debug\net7.0\TaskTracker.Domain.dll
+C:\Users\h\Documents\.NetCore-GenerativeAI\TaskTracker.Application\bin\Debug\net7.0\TaskTracker.Domain.pdb
+C:\Users\h\Documents\.NetCore-GenerativeAI\TaskTracker.Application\obj\Debug\net7.0\TaskTracker.Application.csproj.AssemblyReference.cache
+C:\Users\h\Documents\.NetCore-GenerativeAI\TaskTracker.Application\obj\Debug\net7.0\TaskTracker.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\h\Documents\.NetCore-GenerativeAI\TaskTracker.Application\obj\Debug\net7.0\TaskTracker.Application.AssemblyInfoInputs.cache
+C:\Users\h\Documents\.NetCore-GenerativeAI\TaskTracker.Application\obj\Debug\net7.0\TaskTracker.Application.AssemblyInfo.cs
+C:\Users\h\Documents\.NetCore-GenerativeAI\TaskTracker.Application\obj\Debug\net7.0\TaskTracker.Application.csproj.CoreCompileInputs.cache
+C:\Users\h\Documents\.NetCore-GenerativeAI\TaskTracker.Application\obj\Debug\net7.0\TaskTracker.Application.csproj.CopyComplete
+C:\Users\h\Documents\.NetCore-GenerativeAI\TaskTracker.Application\obj\Debug\net7.0\TaskTracker.Application.dll
+C:\Users\h\Documents\.NetCore-GenerativeAI\TaskTracker.Application\obj\Debug\net7.0\refint\TaskTracker.Application.dll
+C:\Users\h\Documents\.NetCore-GenerativeAI\TaskTracker.Application\obj\Debug\net7.0\TaskTracker.Application.pdb
+C:\Users\h\Documents\.NetCore-GenerativeAI\TaskTracker.Application\obj\Debug\net7.0\ref\TaskTracker.Application.dll

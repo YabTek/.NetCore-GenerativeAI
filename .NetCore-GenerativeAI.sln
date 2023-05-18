@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskTracker.Domain", "TaskT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskTracker.Application", "TaskTracker.Application\TaskTracker.Application.csproj", "{F25DF7AE-6C79-4E79-9AAD-161AF3D45766}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskTracker.Persistence", "TaskTracker.Persistence\TaskTracker.Persistence.csproj", "{2E6190F2-DBAF-4A1D-80E8-72D83A74E491}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskTracker.Presentation", "TaskTracker.Presentation\TaskTracker.Presentation.csproj", "{FB2F8776-267C-4F05-A868-99A29235A133}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{F25DF7AE-6C79-4E79-9AAD-161AF3D45766}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F25DF7AE-6C79-4E79-9AAD-161AF3D45766}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F25DF7AE-6C79-4E79-9AAD-161AF3D45766}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E6190F2-DBAF-4A1D-80E8-72D83A74E491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E6190F2-DBAF-4A1D-80E8-72D83A74E491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E6190F2-DBAF-4A1D-80E8-72D83A74E491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E6190F2-DBAF-4A1D-80E8-72D83A74E491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB2F8776-267C-4F05-A868-99A29235A133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB2F8776-267C-4F05-A868-99A29235A133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB2F8776-267C-4F05-A868-99A29235A133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB2F8776-267C-4F05-A868-99A29235A133}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
