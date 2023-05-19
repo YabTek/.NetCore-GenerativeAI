@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Presentation\\TaskTracker.Presentation.csproj": {}
+    "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Presentation\\TaskTracker.Presentation.csproj": {}
   },
   "projects": {
     "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Application\\TaskTracker.Application.csproj": {
@@ -228,14 +228,14 @@
         }
       }
     },
-    "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Presentation\\TaskTracker.Presentation.csproj": {
+    "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Presentation\\TaskTracker.Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Presentation\\TaskTracker.Presentation.csproj",
+        "projectUniqueName": "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Presentation\\TaskTracker.Presentation.csproj",
         "projectName": "TaskTracker.Presentation",
-        "projectPath": "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Presentation\\TaskTracker.Presentation.csproj",
+        "projectPath": "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Presentation\\TaskTracker.Presentation.csproj",
         "packagesPath": "C:\\Users\\h\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Presentation\\obj\\",
+        "outputPath": "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\h\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -4,8 +4,8 @@ using TaskTracker.Application.Contracts.Persistence;
 using TaskTracker.Application.DTOs.Users;
 using TaskTracker.Application.Features.Users.Requests.Queries;
 
+namespace TaskTracker.Application.Features.Users.Handlers.Queries
 
-namespace BlogApp.Application.Features.Users.CQRS.Handlers
 {
     public class GetUserListRequestHandler : IRequestHandler<GetUserListRequest, List<UserDto>>
     {
