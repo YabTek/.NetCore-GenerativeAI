@@ -3,7 +3,6 @@ using MediatR;
 using TaskTracker.Application.Contracts.Persistence;
 using TaskTracker.Application.DTOs.Tasks;
 using TaskTracker.Application.Features.Tasks.Requests.Queries;
-using TaskTracker.Application.Profiles;
 
 namespace TaskTracker.Application.Features.Tasks.Handlers.Queries;
     public class GetTaskDetailRequestHandler : IRequestHandler<GetTaskDetailRequest, TaskDto>

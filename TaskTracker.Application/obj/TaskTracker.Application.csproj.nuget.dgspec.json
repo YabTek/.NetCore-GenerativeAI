@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Application\\TaskTracker.Application.csproj": {}
+    "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Application\\TaskTracker.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Application\\TaskTracker.Application.csproj": {
+    "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Application\\TaskTracker.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Application\\TaskTracker.Application.csproj",
+        "projectUniqueName": "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Application\\TaskTracker.Application.csproj",
         "projectName": "TaskTracker.Application",
-        "projectPath": "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Application\\TaskTracker.Application.csproj",
+        "projectPath": "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Application\\TaskTracker.Application.csproj",
         "packagesPath": "C:\\Users\\h\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Application\\obj\\",
+        "outputPath": "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\h\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Domain\\TaskTracker.Domain.csproj": {
-                "projectPath": "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Domain\\TaskTracker.Domain.csproj"
+              "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Domain\\TaskTracker.Domain.csproj": {
+                "projectPath": "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Domain\\TaskTracker.Domain.csproj"
               }
             }
           }
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Domain\\TaskTracker.Domain.csproj": {
+    "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Domain\\TaskTracker.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Domain\\TaskTracker.Domain.csproj",
+        "projectUniqueName": "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Domain\\TaskTracker.Domain.csproj",
         "projectName": "TaskTracker.Domain",
-        "projectPath": "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Domain\\TaskTracker.Domain.csproj",
+        "projectPath": "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Domain\\TaskTracker.Domain.csproj",
         "packagesPath": "C:\\Users\\h\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Domain\\obj\\",
+        "outputPath": "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\h\\AppData\\Roaming\\NuGet\\NuGet.Config"
