@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q8ZoWrAsSkB7FAGlrhwBE9N6XZoG73GogrJiheC3YyEsz6SHFxkUKqb1sRo1S3E/Ce6YjhESoYXNGkh6nhD2aA==",
+  "dgSpecHash": "wan7B8ehtDpWcpZcwnR7pA3/WTYz8Wb2HGmC7qS3rKTb3cOa1lF52kjs2mUUQM6IsfRDsrjgg9/snB91NkHfxw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Tests\\TaskTracker.Tests.csproj",
+  "projectFilePath": "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Tests\\TaskTracker.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\h\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\h\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

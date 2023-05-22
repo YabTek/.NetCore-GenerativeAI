@@ -14,14 +14,9 @@ namespace TaskTracker.Persistence.Repository;
             _dbContext = dbContext;
         }
 
-         public async Task<task> GetTaskWithDetails(int id, bool includeUser, bool includeChecklists)
+         public async Task<task> GetTaskWithDetails(int id, bool includeChecklists)
         {
             IQueryable<task> query = _dbContext.Set<task>();
-
-            if (includeUser)
-            {
-                query = query.Include(t => t.User);
-            }
 
             if (includeChecklists)
             {

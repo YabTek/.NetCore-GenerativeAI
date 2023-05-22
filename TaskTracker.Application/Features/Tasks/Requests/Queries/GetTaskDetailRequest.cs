@@ -7,6 +7,5 @@ namespace TaskTracker.Application.Features.Tasks.Requests.Queries;
 public class GetTaskDetailRequest : IRequest<TaskDto>
 {
     public int Id { get; set; }
-    public bool IncludeUser { get; set; } 
     public bool IncludeChecklists { get; set; }
 }

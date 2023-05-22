@@ -1,6 +1,7 @@
 using Moq;
 using TaskTracker.Application.Contracts.Persistence;
 using TaskTracker.Domain;
+using TaskTracker.Domain.Common;
 
 namespace TaskTracker.Tests.Mocks;
 
@@ -17,7 +18,6 @@ public static class MockUserRepository
                 Fullname = "Abebe kebede",
                 Email = "Abe@gmail.com",
                 Password = "hele123@"
-
                 
             },
             
@@ -30,6 +30,29 @@ public static class MockUserRepository
                
             }
         };
+    var tasks = new List<task>
+     {
+        new task
+        {
+            Id = 3,
+            Owner = 1,
+            Title = "Attend meeting",
+            Description = "This task is attending meeting",
+            Start_date = DateTime.Today,
+            End_date = DateTime.Now,
+            Status = Status.Completed,    
+        },  
+        new task{
+            Id = 4,
+            Owner = 1,
+            Title = "Attend ",
+            Description = "This task is attending ",
+            Start_date = DateTime.Today,
+            End_date = DateTime.Now,
+            Status = Status.Completed,      
+
+        }};
+
 
         var mockRepo = new Mock<IUserRepository>();
 
@@ -61,9 +84,19 @@ public static class MockUserRepository
             return user != null;
         });
         
-        mockRepo.Setup(r => r.Get(It.IsAny<int>()))!.ReturnsAsync((int id) =>
+        mockRepo.Setup(r => r.GetUserWithDetails(It.IsAny<int>(), It.IsAny<bool>()))
+        .ReturnsAsync((int id, bool includeTask) =>
         {
-            return users.FirstOrDefault((r) => r.Id == id);
+            var user = users.FirstOrDefault(t => t.Id == id);
+
+            if (includeTask && user != null)
+            {
+                user.Tasks = tasks
+                    .Where(c => c.Owner == id)
+                    .ToList();
+            }
+
+            return user;
         });
 
         return mockRepo;

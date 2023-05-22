@@ -1,4 +1,3 @@
-
 using Moq;
 using TaskTracker.Application.Contracts.Persistence;
 using TaskTracker.Domain;
@@ -21,9 +20,7 @@ public static class MockTaskRepository
                     Description = "This task is attending meeting",
                     Start_date = DateTime.Today,
                     End_date = DateTime.Now,
-                    Status = Status.Completed  
-
-                
+                    Status = Status.Completed,                    
             },
             
             new ()
@@ -34,11 +31,30 @@ public static class MockTaskRepository
                     Description = "This task is attending class",
                     Start_date = DateTime.Today,
                     End_date = DateTime.Now,
-                    Status = Status.Completed 
-               
+                    Status = Status.Completed ,
             }
         };
-
+         var checklists = new List<Checklist>
+            {
+                new Checklist
+                {
+                    Id = 1,
+                    Title = "Checklist 1",
+                    Description = "Checklist 1 description",
+                    associated_task = 3,
+                    Start_date = DateTime.Today,
+                    End_date = DateTime.Now
+                },
+                new Checklist
+                {
+                    Id = 2,
+                    Title = "Checklist 2",
+                    Description = "Checklist 2 description",
+                    associated_task = 3,
+                    Start_date = DateTime.Today,
+                    End_date = DateTime.Now
+                }
+            };
         var mockRepo = new Mock<ITaskRepository>();
 
         mockRepo.Setup(r => r.GetAll()).ReturnsAsync(tasks);
@@ -69,11 +85,23 @@ public static class MockTaskRepository
             return task != null;
         });
         
-        mockRepo.Setup(r => r.Get(It.IsAny<int>()))!.ReturnsAsync((int id) =>
+
+        mockRepo.Setup(r => r.GetTaskWithDetails(It.IsAny<int>(), It.IsAny<bool>()))
+        .ReturnsAsync((int id, bool includeChecklists) =>
         {
-            return tasks.FirstOrDefault((r) => r.Id == id);
+            var task = tasks.FirstOrDefault(t => t.Id == id);
+
+            if (includeChecklists && task != null)
+            {
+                task.Checklists = checklists
+                    .Where(c => c.associated_task == id)
+                    .ToList();
+            }
+
+            return task;
         });
 
+    
         return mockRepo;
     }
 }

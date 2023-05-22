@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Persistence\\TaskTracker.Persistence.csproj": {}
+    "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Persistence\\TaskTracker.Persistence.csproj": {}
   },
   "projects": {
     "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Application\\TaskTracker.Application.csproj": {
@@ -132,14 +132,14 @@
         }
       }
     },
-    "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Persistence\\TaskTracker.Persistence.csproj": {
+    "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Persistence\\TaskTracker.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Persistence\\TaskTracker.Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Persistence\\TaskTracker.Persistence.csproj",
         "projectName": "TaskTracker.Persistence",
-        "projectPath": "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Persistence\\TaskTracker.Persistence.csproj",
+        "projectPath": "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Persistence\\TaskTracker.Persistence.csproj",
         "packagesPath": "C:\\Users\\h\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Persistence\\obj\\",
+        "outputPath": "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\h\\AppData\\Roaming\\NuGet\\NuGet.Config"

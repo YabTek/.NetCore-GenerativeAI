@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Tests\\TaskTracker.Tests.csproj": {}
+    "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Tests\\TaskTracker.Tests.csproj": {}
   },
   "projects": {
     "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Application\\TaskTracker.Application.csproj": {
@@ -400,14 +400,14 @@
         }
       }
     },
-    "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Tests\\TaskTracker.Tests.csproj": {
+    "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Tests\\TaskTracker.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Tests\\TaskTracker.Tests.csproj",
+        "projectUniqueName": "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Tests\\TaskTracker.Tests.csproj",
         "projectName": "TaskTracker.Tests",
-        "projectPath": "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Tests\\TaskTracker.Tests.csproj",
+        "projectPath": "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Tests\\TaskTracker.Tests.csproj",
         "packagesPath": "C:\\Users\\h\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Tests\\obj\\",
+        "outputPath": "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\h\\AppData\\Roaming\\NuGet\\NuGet.Config"

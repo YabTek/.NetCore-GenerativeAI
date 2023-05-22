@@ -17,7 +17,7 @@ namespace TaskTracker.Application.Features.Tasks.Handlers.Queries;
         }
         public async Task<TaskDto> Handle(GetTaskDetailRequest request, CancellationToken cancellationToken)
         {
-            var task = await _unitOfWork.TaskRepository.GetTaskWithDetails(request.Id, request.IncludeUser, request.IncludeChecklists);
+            var task = await _unitOfWork.TaskRepository.GetTaskWithDetails(request.Id, request.IncludeChecklists);
             return _mapper.Map<TaskDto>(task);
         }
     
