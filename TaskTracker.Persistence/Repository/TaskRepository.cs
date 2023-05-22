@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using TaskTracker.Application.Contracts.Persistence;
 using TaskTracker.Domain;
 
@@ -12,4 +13,18 @@ namespace TaskTracker.Persistence.Repository;
         {
             _dbContext = dbContext;
         }
+
+         public async Task<task> GetTaskWithDetails(int id, bool includeChecklists)
+        {
+            IQueryable<task> query = _dbContext.Set<task>();
+
+            if (includeChecklists)
+            {
+                query = query.Include(t => t.Checklists);
+            }
+
+            return await query.FirstOrDefaultAsync(t => t.Id == id);
+        }
+        
     }
+    

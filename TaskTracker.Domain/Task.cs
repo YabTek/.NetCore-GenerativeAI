@@ -5,17 +5,17 @@ namespace TaskTracker.Domain;
 
 public class task : BaseDomainEntity
 {
+    public task()
+    {
+        Checklists = new HashSet<Checklist>();
+    }
     public int Owner { get; set; }
     public string Title { get; set; }
     public string Description { get; set; }
-    public DateTime Start_date { get; set; }
-    public DateTime End_date { get; set; }
-    public TaskStatus Status {get; set;}
+    public User User { get; set; }
+    public ICollection<Checklist> Checklists { get; set; }
+
 
 }
-public enum TaskStatus
-{
-    Completed,
-    NotCompleted
-}
+
 

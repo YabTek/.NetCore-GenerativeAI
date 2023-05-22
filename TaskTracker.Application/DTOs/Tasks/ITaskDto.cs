@@ -1,3 +1,5 @@
+using TaskTracker.Domain.Common;
+
 namespace TaskTracker.Application.DTOs.Tasks;
 
 public interface ITaskDto
@@ -7,5 +9,6 @@ public interface ITaskDto
         public string Description { get; set; }
         public DateTime Start_date { get; set; }
         public DateTime End_date { get; set; }
-        public TaskStatus Status { get; set; }
+        public Status Status { get; set; }
+        
 }

@@ -2,6 +2,7 @@ using AutoMapper;
 using TaskTracker.Application.DTOs.Checklists;
 using TaskTracker.Application.DTOs.Tasks;
 using TaskTracker.Application.DTOs.Users;
+using TaskTracker.Application.Models;
 using TaskTracker.Domain;
 
 namespace TaskTracker.Application.Profiles;
@@ -13,7 +14,8 @@ namespace TaskTracker.Application.Profiles;
 
             CreateMap<User, UserDto>().ReverseMap();
             CreateMap<User, CreateUserDto>().ReverseMap();
-            CreateMap<User, UpdateUserDto>().ReverseMap();
+            CreateMap<RegisterDto, CreateUserDto>().ReverseMap();
+            CreateMap<RegistrationRequest,RegisterDto>().ReverseMap();
 
             #endregion user
 

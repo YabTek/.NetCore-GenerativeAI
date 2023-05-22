@@ -1,5 +1,6 @@
 using Microsoft.OpenApi.Models;
 using TaskTracker.Application;
+using TaskTracker.Identity;
 using TaskTracker.Persistence;
 using TaskTracker.Presentation.Middlewares;
 
@@ -8,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.ConfigureApplicationServices();
 builder.Services.ConfigurePersistenceServices(builder.Configuration);
+builder.Services.ConfigureIdentityServices(builder.Configuration);
 builder.Services.AddHttpContextAccessor();
 AddSwaggerDoc(builder.Services);
 builder.Services.AddControllers();

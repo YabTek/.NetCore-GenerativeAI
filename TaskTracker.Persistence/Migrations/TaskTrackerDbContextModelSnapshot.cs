@@ -30,14 +30,14 @@ namespace TaskTracker.Persistence.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("DateCreated")
-                        .HasColumnType("timestamp without time zone");
-
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<DateTime>("LastModifiedDate")
+                    b.Property<DateTime>("End_date")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<DateTime>("Start_date")
                         .HasColumnType("timestamp without time zone");
 
                     b.Property<int>("Status")
@@ -52,15 +52,17 @@ namespace TaskTracker.Persistence.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("associated_task");
+
                     b.ToTable("checklists");
 
                     b.HasData(
                         new
                         {
                             Id = 1,
-                            DateCreated = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "checklist for a meeting agenda",
-                            LastModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            End_date = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Start_date = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 0,
                             Title = "create meeting agenda",
                             associated_task = 3
@@ -68,9 +70,9 @@ namespace TaskTracker.Persistence.Migrations
                         new
                         {
                             Id = 2,
-                            DateCreated = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "checklist for packing things",
-                            LastModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            End_date = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Start_date = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 0,
                             Title = "pack things",
                             associated_task = 4
@@ -85,9 +87,6 @@ namespace TaskTracker.Persistence.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("DateCreated")
-                        .HasColumnType("timestamp without time zone");
-
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("text");
@@ -95,9 +94,6 @@ namespace TaskTracker.Persistence.Migrations
                     b.Property<string>("Fullname")
                         .IsRequired()
                         .HasColumnType("text");
-
-                    b.Property<DateTime>("LastModifiedDate")
-                        .HasColumnType("timestamp without time zone");
 
                     b.Property<string>("Password")
                         .IsRequired()
@@ -111,19 +107,15 @@ namespace TaskTracker.Persistence.Migrations
                         new
                         {
                             Id = 1,
-                            DateCreated = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "kebede@gmail.com",
                             Fullname = "Abebe Kebede",
-                            LastModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Password = "abebe123@"
                         },
                         new
                         {
                             Id = 2,
-                            DateCreated = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "helen@gmail.com",
                             Fullname = "Helen Kebede",
-                            LastModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Password = "helen123@"
                         });
                 });
@@ -136,17 +128,11 @@ namespace TaskTracker.Persistence.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("DateCreated")
-                        .HasColumnType("timestamp without time zone");
-
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("End_date")
-                        .HasColumnType("timestamp without time zone");
-
-                    b.Property<DateTime>("LastModifiedDate")
                         .HasColumnType("timestamp without time zone");
 
                     b.Property<int>("Owner")
@@ -164,33 +150,65 @@ namespace TaskTracker.Persistence.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("Owner");
+
                     b.ToTable("tasks");
 
                     b.HasData(
                         new
                         {
                             Id = 3,
-                            DateCreated = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "This task is attending meeting",
-                            End_date = new DateTime(2023, 5, 18, 12, 51, 11, 515, DateTimeKind.Local).AddTicks(1773),
-                            LastModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            End_date = new DateTime(2023, 5, 22, 12, 13, 2, 90, DateTimeKind.Local).AddTicks(5109),
                             Owner = 1,
-                            Start_date = new DateTime(2023, 5, 18, 0, 0, 0, 0, DateTimeKind.Local),
+                            Start_date = new DateTime(2023, 5, 22, 0, 0, 0, 0, DateTimeKind.Local),
                             Status = 0,
                             Title = "Attend meeting"
                         },
                         new
                         {
                             Id = 4,
-                            DateCreated = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "This task is attending class",
-                            End_date = new DateTime(2023, 5, 18, 12, 51, 11, 515, DateTimeKind.Local).AddTicks(1777),
-                            LastModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            End_date = new DateTime(2023, 5, 22, 12, 13, 2, 90, DateTimeKind.Local).AddTicks(5114),
                             Owner = 1,
-                            Start_date = new DateTime(2023, 5, 18, 0, 0, 0, 0, DateTimeKind.Local),
+                            Start_date = new DateTime(2023, 5, 22, 0, 0, 0, 0, DateTimeKind.Local),
                             Status = 0,
                             Title = "Attend class"
                         });
+                });
+
+            modelBuilder.Entity("TaskTracker.Domain.Checklist", b =>
+                {
+                    b.HasOne("TaskTracker.Domain.task", "Task")
+                        .WithMany("Checklists")
+                        .HasForeignKey("associated_task")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired()
+                        .HasConstraintName("FK_Task_Checklist");
+
+                    b.Navigation("Task");
+                });
+
+            modelBuilder.Entity("TaskTracker.Domain.task", b =>
+                {
+                    b.HasOne("TaskTracker.Domain.User", "User")
+                        .WithMany("Tasks")
+                        .HasForeignKey("Owner")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired()
+                        .HasConstraintName("FK_Task_User");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("TaskTracker.Domain.User", b =>
+                {
+                    b.Navigation("Tasks");
+                });
+
+            modelBuilder.Entity("TaskTracker.Domain.task", b =>
+                {
+                    b.Navigation("Checklists");
                 });
 #pragma warning restore 612, 618
         }

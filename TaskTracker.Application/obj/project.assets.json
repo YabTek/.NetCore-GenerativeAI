@@ -509,11 +509,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Application\\TaskTracker.Application.csproj",
+      "projectUniqueName": "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Application\\TaskTracker.Application.csproj",
       "projectName": "TaskTracker.Application",
-      "projectPath": "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Application\\TaskTracker.Application.csproj",
+      "projectPath": "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Application\\TaskTracker.Application.csproj",
       "packagesPath": "C:\\Users\\h\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Application\\obj\\",
+      "outputPath": "C:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\h\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -7,7 +7,5 @@ public class UpdateTaskDto : BaseDto,ITaskDto
         public int Owner { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        public DateTime Start_date { get; set; }
-        public DateTime End_date { get; set; }
-        public TaskStatus Status{ get; set; }
+        
 }

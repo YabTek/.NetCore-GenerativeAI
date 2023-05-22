@@ -3,7 +3,6 @@ using MediatR;
 using TaskTracker.Application.Contracts.Persistence;
 using TaskTracker.Application.DTOs.Tasks;
 using TaskTracker.Application.Features.Tasks.Requests.Queries;
-using TaskTracker.Application.Profiles;
 
 namespace TaskTracker.Application.Features.Tasks.Handlers.Queries;
     public class GetTaskDetailRequestHandler : IRequestHandler<GetTaskDetailRequest, TaskDto>
@@ -18,8 +17,8 @@ namespace TaskTracker.Application.Features.Tasks.Handlers.Queries;
         }
         public async Task<TaskDto> Handle(GetTaskDetailRequest request, CancellationToken cancellationToken)
         {
-            var taskk = await _unitOfWork.TaskRepository.Get(request.Id);
-            return _mapper.Map<TaskDto>(taskk);
+            var task = await _unitOfWork.TaskRepository.GetTaskWithDetails(request.Id, request.IncludeChecklists);
+            return _mapper.Map<TaskDto>(task);
         }
     
 }

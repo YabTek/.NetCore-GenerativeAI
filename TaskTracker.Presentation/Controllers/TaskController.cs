@@ -28,7 +28,7 @@ namespace TaskTracker.Presentation.Controllers;
         [HttpGet("{id}")]
         public async Task<ActionResult<TaskDto>> Get(int id)
         {
-            var tasks = await _mediator.Send(new GetTaskDetailRequest { Id = id });
+            var tasks = await _mediator.Send(new GetTaskDetailRequest { Id = id, IncludeChecklists = true });
             return Ok(tasks);
         }
 

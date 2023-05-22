@@ -8,7 +8,7 @@ public class IChecklistDtoValidator : AbstractValidator<IChecklistDto>
 
         RuleFor(x => x.Title).NotEmpty();
         RuleFor(x => x.Description).NotEmpty();
-        RuleFor(x => x.AssociatedTask).GreaterThan(0);
+        RuleFor(x => x.associated_task).GreaterThan(0);
         RuleFor(x => x.Status).NotNull();
 }
 }

@@ -22,22 +22,20 @@ namespace TaskTracker.Persistence.Repository;
             _dbContext.Set<T>().Remove(entity);
         }
 
+        
+        public async Task<IReadOnlyList<T>> GetAll()
+        {
+            return await _dbContext.Set<T>().AsNoTracking().ToListAsync();
+        }
+        public async Task<T> Get(int id)
+        {
+            return await _dbContext.Set<T>().FindAsync(id);
+        }
         public async Task<bool> Exists(int id)
         {
             var entity = await Get(id);
             return entity != null;
         }
-
-        public async Task<T> Get(int id)
-        {
-            return await _dbContext.Set<T>().FindAsync(id);
-        }
-
-        public async Task<IReadOnlyList<T>> GetAll()
-        {
-            return await _dbContext.Set<T>().AsNoTracking().ToListAsync();
-        }
-
         public async Task Update(T entity)
         {
             _dbContext.Entry(entity).State = EntityState.Modified;
