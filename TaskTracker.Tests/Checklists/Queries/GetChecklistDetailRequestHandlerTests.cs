@@ -5,6 +5,7 @@ using TaskTracker.Application.DTOs.Checklists;
 using TaskTracker.Application.Features.Checklists.Handlers.Queries;
 using TaskTracker.Application.Features.Checklists.Requests.Queries;
 using TaskTracker.Domain;
+using TaskTracker.Domain.Common;
 using Xunit;
 
 namespace TaskTracker.Tests.Checklists.Queries;
@@ -26,9 +27,9 @@ namespace TaskTracker.Tests.Checklists.Queries;
             // Arrange
             var checklistId = 1;
             var checklist = new Checklist { Id = checklistId, Title = "create meeting agenda",
-                    Description = "checklist for a meeting agenda", associated_task = 3,Status = ChecklistStatus.Completed };
+                    Description = "checklist for a meeting agenda", associated_task = 3,Status = Status.Completed };
             var expectedChecklistDto = new ChecklistDto { Id = checklistId, Title = "create meeting agenda",
-                    Description = "checklist for a meeting agenda",associated_task = 3,Status = ChecklistStatus.Completed };
+                    Description = "checklist for a meeting agenda",associated_task = 3,Status = Status.Completed };
             var query = new GetChecklistDetailRequest { Id = checklistId };
             var cancellationToken = new CancellationToken();
 

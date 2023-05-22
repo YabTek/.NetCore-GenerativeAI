@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
 using TaskTracker.Domain;
+using TaskTracker.Domain.Common;
 
 namespace TaskTracker.Persistence.Configurations.Entities;
 
@@ -17,7 +18,7 @@ namespace TaskTracker.Persistence.Configurations.Entities;
                     Description = "This task is attending meeting",
                     Start_date = DateTime.Today,
                     End_date = DateTime.Now,
-                    Status = Domain.TaskStatus.Completed  
+                    Status = Status.Completed  
                 },
 
                 new task
@@ -28,7 +29,7 @@ namespace TaskTracker.Persistence.Configurations.Entities;
                     Description = "This task is attending class",
                     Start_date = DateTime.Today,
                     End_date = DateTime.Now,
-                    Status = Domain.TaskStatus.Completed 
+                    Status = Status.Completed 
                     
                 }
                 );

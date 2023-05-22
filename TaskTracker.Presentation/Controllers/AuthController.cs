@@ -43,6 +43,7 @@ public class AuthController : BaseController
             return HandleResult(response);
 
         //command.CreateUserDto.Id = response.Value.UserId;
+
         try
         {
             var userResponse = await _mediator.Send(command);

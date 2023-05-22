@@ -18,7 +18,7 @@ namespace TaskTracker.Application.Features.Users.Handlers.Queries;
         }
         public async Task<UserDto> Handle(GetUserDetailRequest request, CancellationToken cancellationToken)
         {
-            var user = await _unitOfWork.UserRepository.Get(request.Id);
+            var user = await _unitOfWork.UserRepository.GetUserWithDetails(request.Id, request.IncludeTask);
             return _mapper.Map<UserDto>(user);
         }
     

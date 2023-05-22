@@ -7,6 +7,7 @@ using TaskTracker.Application.Features.Checklists.Handlers.Commands;
 using TaskTracker.Application.Features.Checklists.Requests.Commands;
 using TaskTracker.Application.Profiles;
 using TaskTracker.Domain;
+using TaskTracker.Domain.Common;
 using TaskTracker.Tests.Mocks;
 using Xunit;
 
@@ -41,7 +42,7 @@ namespace TaskTracker.Tests.Checklists.Commands;
                     Title = "create meeting agenda",
                     Description = "checklist for a meeting agenda",
                     associated_task = 3,
-                    Status = ChecklistStatus.Completed
+                    Status = Status.Completed
             };
 
             _mockUnitOfWork.Setup(x => x.ChecklistRepository.Get(checklist.Id)).ReturnsAsync(checklist);

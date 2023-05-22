@@ -14,7 +14,6 @@ namespace TaskTracker.Application.Profiles;
 
             CreateMap<User, UserDto>().ReverseMap();
             CreateMap<User, CreateUserDto>().ReverseMap();
-            CreateMap<User, UpdateUserDto>().ReverseMap();
             CreateMap<RegisterDto, CreateUserDto>().ReverseMap();
             CreateMap<RegistrationRequest,RegisterDto>().ReverseMap();
 

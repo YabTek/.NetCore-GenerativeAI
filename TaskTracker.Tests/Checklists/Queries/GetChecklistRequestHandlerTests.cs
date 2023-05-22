@@ -5,6 +5,7 @@ using TaskTracker.Application.DTOs.Checklists;
 using TaskTracker.Application.Features.Checklists.Handlers.Queries;
 using TaskTracker.Application.Features.Checklists.Requests.Queries;
 using TaskTracker.Domain;
+using TaskTracker.Domain.Common;
 using Xunit;
 
 namespace TaskTracker.Tests.Checklists.Queries;
@@ -27,21 +28,21 @@ namespace TaskTracker.Tests.Checklists.Queries;
             var checklists = new List<Checklist>
             {
                 new Checklist { Id = 1, Title = "create meeting agenda",Description = "checklist for a meeting agenda",
-                    associated_task = 3,Status = ChecklistStatus.Completed },
+                    associated_task = 3,Status = Status.Completed },
                 new Checklist { Id = 2, Title = "create second meeting agenda",Description = "checklist for a meeting agenda",
-                    associated_task = 4,Status = ChecklistStatus.Completed },
+                    associated_task = 4,Status = Status.Completed },
                 new Checklist { Id = 3, Title = "create third meeting agenda",Description = "checklist for a meeting agenda",
-                    associated_task = 6,Status = ChecklistStatus.Completed }
+                    associated_task = 6,Status = Status.Completed }
             };
 
             var checklistDtos = new List<ChecklistDto>
             {
                 new ChecklistDto { Id = 1, Title = "create meeting agenda",Description = "checklist for a meeting agenda",
-                    associated_task = 3,Status = ChecklistStatus.Completed },
+                    associated_task = 3,Status = Status.Completed },
                 new ChecklistDto { Id = 2, Title = "create second meeting agenda",Description = "checklist for a meeting agenda",
-                    associated_task = 4,Status = ChecklistStatus.Completed },
+                    associated_task = 4,Status = Status.Completed },
                 new ChecklistDto { Id = 3,Title = "create third meeting agenda",Description = "checklist for a meeting agenda",
-                    associated_task = 6,Status = ChecklistStatus.Completed  }
+                    associated_task = 6,Status = Status.Completed  }
             };
 
             _mockUnitOfWork.Setup(u => u.ChecklistRepository.GetAll()).ReturnsAsync(checklists);

@@ -8,6 +8,7 @@ using TaskTracker.Application.Exceptions;
 using TaskTracker.Application.Features.Checklists.Handlers.Commands;
 using TaskTracker.Application.Features.Checklists.Requests.Commands;
 using TaskTracker.Domain;
+using TaskTracker.Domain.Common;
 using Xunit;
 
 namespace TaskTracker.Tests.Checklists.Commands;
@@ -41,7 +42,7 @@ namespace TaskTracker.Tests.Checklists.Commands;
                 Title = "create meeting agenda",
                 Description = "checklist for a meeting agenda",
                 associated_task = 3,
-                Status = ChecklistStatus.Completed
+                Status = Status.Completed
             };
             var updateDto = new UpdateChecklistDto
             {
@@ -49,7 +50,7 @@ namespace TaskTracker.Tests.Checklists.Commands;
                 Title = "create new meeting agenda",
                 Description = "checklist for a new meeting agenda",
                 associated_task = 3,
-                Status = ChecklistStatus.Completed
+                Status = Status.Completed
             };
              var command = new UpdateChecklistCommand()
                         {
@@ -82,7 +83,7 @@ namespace TaskTracker.Tests.Checklists.Commands;
                 Title = "create meeting agenda",
                 Description = "checklist for a meeting agenda",
                 associated_task = 3,
-                Status = ChecklistStatus.Completed
+                Status = Status.Completed
             };
           var command = new UpdateChecklistCommand()
                         {

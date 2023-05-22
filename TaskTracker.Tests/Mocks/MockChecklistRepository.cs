@@ -1,6 +1,7 @@
 using Moq;
 using TaskTracker.Application.Contracts.Persistence;
 using TaskTracker.Domain;
+using TaskTracker.Domain.Common;
 
 namespace TaskTracker.Tests.Mocks;
 
@@ -16,7 +17,7 @@ public static class MockChecklistRepository
                     Title = "create meeting agenda",
                     Description = "checklist for a meeting agenda",
                     associated_task = 3,
-                    Status = ChecklistStatus.Completed
+                    Status = Status.Completed
         
             },
             
@@ -26,7 +27,7 @@ public static class MockChecklistRepository
                     Title = "pack things",
                     Description = "checklist for packing things",
                     associated_task = 4,
-                    Status = ChecklistStatus.Completed
+                    Status = Status.Completed
             }
         };
 

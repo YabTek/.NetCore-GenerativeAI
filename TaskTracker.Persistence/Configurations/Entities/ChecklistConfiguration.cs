@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
 using TaskTracker.Domain;
+using TaskTracker.Domain.Common;
 
 namespace TaskTracker.Persistence.Configurations.Entities;
  public class ChecklistConfiguration : IEntityTypeConfiguration<Checklist>
@@ -14,7 +15,7 @@ namespace TaskTracker.Persistence.Configurations.Entities;
                     Title = "create meeting agenda",
                     Description = "checklist for a meeting agenda",
                     associated_task = 3,
-                    Status = ChecklistStatus.Completed
+                    Status = Status.Completed
                     
                 },
 
@@ -24,7 +25,7 @@ namespace TaskTracker.Persistence.Configurations.Entities;
                     Title = "pack things",
                     Description = "checklist for packing things",
                     associated_task = 4,
-                    Status = ChecklistStatus.Completed
+                    Status = Status.Completed
                     
                 }
                 );

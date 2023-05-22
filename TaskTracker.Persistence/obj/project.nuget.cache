@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qUPM6zyVOdr8I3YAQKfm4nVryjZ0ARNQdeeDlV2Tq/SdCnH5sPTiPMR8K7Kae1PsTrS+IU6Ept0dXlmiqzD8yg==",
+  "dgSpecHash": "gorvuQnUd7xvmNhKOd7cZsHbe8B5DraHeJWnutNubS48BD8hlQ/phWMkzYdE2QPFXmSx+5xoPXhhEU/oGbM3tA==",
   "success": true,
   "projectFilePath": "c:\\Users\\h\\Documents\\.NetCore-GenerativeAI\\TaskTracker.Persistence\\TaskTracker.Persistence.csproj",
   "expectedPackageFiles": [

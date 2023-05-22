@@ -8,6 +8,7 @@ using TaskTracker.Application.Features.Checklists.Requests.Commands;
 using TaskTracker.Application.Profiles;
 using TaskTracker.Application.Responses;
 using TaskTracker.Domain;
+using TaskTracker.Domain.Common;
 using TaskTracker.Tests.Mocks;
 using Xunit;
 
@@ -40,7 +41,7 @@ namespace TaskTracker.Tests.Checklists.Commands;
                 Title = "create meeting agenda",
                 Description = "checklist for a meeting agenda",
                 associated_task = 3,
-                Status = ChecklistStatus.Completed
+                Status = Status.Completed
             };
 
             _invalidChecklistDto = new CreateChecklistDto
@@ -48,7 +49,7 @@ namespace TaskTracker.Tests.Checklists.Commands;
                 Title = "",
                 Description = "checklist for a meeting agenda",
                 associated_task = 3,
-                Status = ChecklistStatus.Completed
+                Status = Status.Completed
             };
         }
 

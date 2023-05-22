@@ -12,7 +12,7 @@ using TaskTracker.Identity;
 namespace TaskTracker.Identity.Migrations
 {
     [DbContext(typeof(TaskTrackerIdentityDbContext))]
-    [Migration("20230521073557_identityMigration")]
+    [Migration("20230522092147_identityMigration")]
     partial class identityMigration
     {
         /// <inheritdoc />
